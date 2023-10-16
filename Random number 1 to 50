@@ -1,0 +1,24 @@
+# Random number 1 to 50 in python
+
+import random
+numrnd = random.randint(1,50)
+
+while True:
+    tentativa = int(input("Chute um número de 1 a 50: "))
+
+    if tentativa < numrnd:
+        print("Tente um número maior!")
+        print("-------------------------------")
+
+    elif tentativa > numrnd:
+        print("Tente um número menor!")
+        print("-------------------------------")
+
+    elif tentativa == numrnd:
+        print(f"Parabéns você advinho o número!")
+        print("-------------------------------")
+        saida = input("Digite 'sair' para fechar!\n")
+        if saida == "sair":
+            break
+
+# Can anyone help me how to add a function that shows how many attempts there were before getting the number right?
